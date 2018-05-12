@@ -69,6 +69,7 @@ boundEditComment(id, 'edited comment');
 
 function thumbUpComment(id, thumbUp) {
 	return {
+		type: THUMB_UP_COMMENT,
 		thumbUp: thumbUp++,
 		id: id
 	}
@@ -79,6 +80,7 @@ boundThumbUp(id, thumbUp);
 
 function thumbDownComment(id, thumbDown) {
 	return {
+		type: THUMB_DOWN_COMMENT,
 		thumbDown: thumbDown++,
 		id: id
 	}
